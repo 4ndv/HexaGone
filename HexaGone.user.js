@@ -18,11 +18,11 @@ function findAndReplaceMask() {
   console.log('Trying...');
   hexagoneTries += 1;
 
-  const mask = document.querySelector('#hex-hw-shapeclip-clipconfig');
+  const mask = document.querySelector('#shape-hex');
 
   if (!mask) return false;
 
-  mask.outerHTML = '<clipPath clipPathUnits="objectBoundingBox" id="hex-hw-shapeclip-clipconfig" transform="scale(0.01 0.01)"><circle cy="50" cx="50" r="50"></circle></clipPath>';
+  mask.outerHTML = '<clipPath clipPathUnits="objectBoundingBox" id="shape-hex" transform="scale(0.01 0.01)"><circle cy="50" cx="50" r="50"></circle></clipPath>';
 
   return true;
 }
